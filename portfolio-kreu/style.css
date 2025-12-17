@@ -20,6 +20,17 @@ main {
     flex-direction: column;
 }
 
+.point-sections {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        width: 32px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        display: none;
+    }
+}
 
         /*NAV SECTION*/
 nav {
@@ -42,16 +53,21 @@ nav {
     color: #0B0B0B;
     outline: none;
     border: none;
-}
-
-.button-primary:hover {
-    background-image: linear-gradient(90deg, #EE6B00 0%, #D37D00 50%, #C48900 100%);
+    cursor: pointer;
+    &:hover {
+        background-image: linear-gradient(90deg, #EE6B00 0%, #D37D00 50%, #C48900 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 17px  #f0961048;
+    }
 }
 
 nav a {
     text-decoration: none;
     color: #FAF9F9;
     font-size: 24px;
+    @media (min-width: 1px) and (max-width: 425px) {
+        display: none;
+    }
 }
 
 nav a:hover {
@@ -67,6 +83,18 @@ section.hero-section {
     justify-content: space-between;
     margin-top: 100px;
     position: relative;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        height: 410px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        height: 510px;
+        flex-direction: column;
+    }
+    @media (max-width: 425px) {
+        height: 510px;
+        flex-direction: column;
+        width: 400px;
+    }
 }
 
 section.hero-section .title {
@@ -86,12 +114,70 @@ section.hero-section .title h1{
     font-size: 220px;
     line-height: 180px;
     letter-spacing: 8px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 140px;
+        line-height: 160px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 96px;
+        line-height: 90px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    @media (max-width: 425px) {
+        font-size: 54px;
+        line-height: 50px;
+    }
+}
+
+.hero-img-bg {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        width: 424px;
+        height: 390px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 424px;
+        height: 390px;
+    }
+    @media (min-width: 1px) and (max-width: 425px) {
+        width: 424px;
+        height: 390px;
+    }
 }
 
 section.hero-section .title h3 {
     font-weight: normal;
     font-size: 49px;
     letter-spacing: 11px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    @media (max-width: 425px) {
+        font-size: 18px;
+        letter-spacing: 2px;
+    }
+}
+
+.point {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        width: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 16px;
+    }
+    @media (max-width: 425px) {
+        width: 12px;
+    }
 }
 
 
@@ -99,7 +185,12 @@ section.hero-section .title h3 {
 .apresentation {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: 100vh;
     margin-top: 100px;
+    @media (max-width: 425px) {
+        width: 410px;
+    }
 }
 
 .apresentation h3, .about h3, .services h3, .projects h3 {
@@ -108,12 +199,37 @@ section.hero-section .title h3 {
     font-style: italic;
     font-size: 60px;
     margin-top: 100px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 48px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 40px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 32px;
+    }
+    @media (max-width: 425px) {
+        font-size: 40px;
+    }
 }
 
 .apresentation p {
     font-size: 32px;
     margin: 32px 64px;
     line-height: 120%;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 16px;
+    }
+    @media (max-width: 425px) {
+        font-size: 20px;
+        margin: 32px 0;
+    }
 }
 
 .button-secondary {
@@ -126,10 +242,12 @@ section.hero-section .title h3 {
     border: 1px solid #E27821;
     width: 378px;
     align-self: center;
-}
-
-.button-secondary:hover {
-    background-color: #171616;
+    cursor: pointer;
+    &:hover {
+        background-color: #171616;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px  #f0961048;
+    }
 }
 
         /*ABOUT SECTION*/
@@ -137,12 +255,34 @@ section.hero-section .title h3 {
     display: flex;
     flex-direction: column;
     position: relative;
+    justify-content: center;
+    height: 100vh;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        height: 100%;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        height: 100%;
+    }
+    @media (max-width: 425px) {
+        height: 100%;
+        width: 410px;
+    }
 }
 
 .content {
     display: flex;
     flex-direction: row;
     margin: 32px 64px;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        flex-direction: column;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 425px) {
+        flex-direction: column;
+        margin: 32px 0;
+    }
 }
 
 .img-button {
@@ -150,6 +290,21 @@ section.hero-section .title h3 {
     flex-direction: column;
     height: 520px;
     justify-content: space-between;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+        height: 750px;
+        margin-bottom: 48px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 20px;
+        height: 500px;
+        margin-bottom: 48px;
+    }
+    @media (max-width: 425px) {
+        font-size: 20px;
+        height: 500px;
+        margin-bottom: 48px;
+    }
 }
 
 .content-p {
@@ -157,6 +312,20 @@ section.hero-section .title h3 {
     font-size: 32px;
     line-height: 120%;
     padding-left: 32px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+        padding-left: 0;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 16px;
+        padding-left: 0;
+    }
+    @media (max-width: 425px) {
+        font-size: 20px;
+    }
 }
 
 .text {
@@ -172,10 +341,23 @@ section.hero-section .title h3 {
 
 
         /*SERVICES SECTION*/
+.services {
+    @media (max-width: 425px) {
+        width: 410px;
+    }
+}
+
 .content-cards {
     display: flex;
     margin: 32px 64px;
     justify-content: space-between;
+    @media (min-width: 426px) and (max-width: 768px) {
+         flex-direction: column;
+    }
+    @media (max-width: 425px) {
+        flex-direction: column;
+        margin: 32px 0;
+    }
 }
 
 .card {
@@ -192,16 +374,46 @@ section.hero-section .title h3 {
     background-position: 4px 32px;
     &:hover {
         background-color:#05050573;
+        box-shadow: 0 5px 17px  #f0961048;
+    }
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        height: 240px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+         width: 100%;
+         margin-bottom: 24px;
+    }
+    @media (max-width: 425px) {
+        width: 100%;
+        margin-bottom: 24px;
     }
 }
 
 .card h5 {
     font-size: 32px;
     margin-bottom: 16px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .card p {
     font-size: 20px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 16px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 12px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .card .card-ponto-de-luz {
@@ -219,16 +431,20 @@ section.hero-section .title h3 {
     justify-content: space-between;
     margin: 32px 64px;
     flex-wrap: wrap;
-    background-image: url(./image/ponto-luz-bg.png);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 25%;
+    @media (min-width: 426px) and (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (max-width: 425px) {
+        flex-direction: column;
+    }
 }
 
 .cards {
     width: 48%;
     height: auto;
-    border: 1px solid #faf9f944;
     border: 1px solid #faf9f944;
     border-radius: 16px;
     padding: 32px 0 0 0;
@@ -237,6 +453,14 @@ section.hero-section .title h3 {
     align-items: center;
     &:hover {
         background-color:#05050573;
+        box-shadow: 0 5px 17px  #f096102a;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        flex-direction: column;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 100%;
+        margin-bottom: 24px;
     }
 }
 
@@ -259,6 +483,161 @@ section.hero-section .title h3 {
     width: 100%;
 }
 
-.card-title h5 {
+.card-title h6 {
     font-size: 24px;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 16px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.card-title .button-primary {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        padding: 12px 8px;
+        font-size: 16px;
+    }
+}
+
+.card-title .button-primary img {
+    @media (min-width: 769px) and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.button-carrossel {
+    background-color: rgba(255, 255, 255, 0.062);
+    padding: 16px;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.062);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    overflow: hidden;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px  #f096102a;
+    }
+}
+
+.project-button {
+    display: flex;
+    margin: 32px 64px;
+    justify-content: space-between;
+}
+
+.button-right {
+    transform: rotate(180deg);
+}
+
+
+        /*FOOTER SECTION*/
+.rodape {
+    height: 100vh;
+    display: flex;
+}
+
+.footer {
+    border-radius: 16px;
+    height: 600px;
+    border: 1px solid #faf9f944;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(./image/bg.svg);
+    background-size: cover;
+}
+
+.footer h3 {
+    font-size: 60px;
+    font-family: "Instrument Serif", serif;
+    font-weight: 500;
+    font-style: italic;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 48px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 32px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 28px;
+    }
+}
+
+.footer p {
+    font-size: 32px;
+    line-height: 120%;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 24px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 20px;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.footer .copyright {
+    font-size: 16px;
+    @media (min-width: 1200px) and (max-width: 1440px) {
+        font-size: 12px;
+    }
+    @media (min-width: 769px) and (max-width: 1199px) {
+        font-size: 12px;
+    }
+}
+
+.footer .button-copy {
+    background-color: #0B0B0B;
+    padding: 12px 16px;
+    font-size: 20px;
+    color: #E27821;
+    outline: none;
+    border: 1px solid #E27821;
+    border-radius: 100px;
+    align-self: center;
+    cursor: pointer;
+    &:hover {
+        background-color: #171616;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px  #f0961048;
+    }
+}
+
+.footer .button-copy img {
+    width: 12px;
+}
+
+.socials {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    @media (min-width: 769px) and (max-width: 1199px) {
+        width: 30%;
+    }
+    @media (min-width: 426px) and (max-width: 768px) {
+        width: 50%;
+    }
+}
+
+.button-socials {
+    cursor: pointer;
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px  #f0961048;
+        border-radius: 50%;
+    }
+}
+
+.separador {
+    border-bottom: 1px solid #faf9f92d;
+    height: 0;
+    width: 80%;
+    margin: 15px 0;
+    border-radius: 55px;
 }
