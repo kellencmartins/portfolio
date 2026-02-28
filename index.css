@@ -10,11 +10,24 @@ body {
     background-color: #0B0B0B;
     background-image: url('assets/img/bg-luz.png');
     background-size: cover;
-    margin: 0px 200px;
+    margin: 80px 200px;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+
+.text {
+    color: #ebe4e4;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
 }
 
         /* NAVBAR */
@@ -22,7 +35,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
 }
 
 .logo {
@@ -127,7 +139,6 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px;
 }
 
 .project-title {
@@ -142,13 +153,6 @@ a {
     position: relative;
 }
 
-.text {
-    color: #ebe4e4;
-    font-family: 'Space Grotesk', sans-serif;
-    font-weight: 200;
-    font-size: 16px;
-}
-
 .card-projeto {
     width: 48%;
     display: flex;
@@ -157,7 +161,7 @@ a {
     border: 1px solid #474646;
     padding: 32px;
     background-image: url(assets/img/ponto-luz-bg.png);
-    background-position: 0% 100%;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
 }
 
@@ -187,4 +191,47 @@ a {
 
 .cardimg {
     width: 100%;
+}
+
+        /* SERVICES */
+.services {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40%;
+}
+
+.card-services {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.text-service {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title-service {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 30%;
+}
+
+.title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    color: #ebe4e4;
+    gap: 20px;
 }
