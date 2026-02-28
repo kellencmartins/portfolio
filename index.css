@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0B0B;
+    background-image: url('assets/img/bg-luz.png');
+    background-size: cover;
+    margin: 0px 200px;
+}
+
+a {
+    text-decoration: none;
+}
+
+        /* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ebe4e4;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    &:hover {
+        color: #E27821;
+    }
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 200,
+  'GRAD' 200,
+  'opsz' 20
+}
+
+.btn-contact {
+    background-color: #0B0B0B;
+    color: #ebe4e4;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    &:hover {
+        background-color: #a7530f;
+        box-shadow: #e2782148 3px 3px 30px;
+    }
+}
+
+        /* HERO */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 110px;
+    padding: 100px 20px;
+}
+
+.main-content h3 {
+    color: #ebe4e4;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.titles {
+    margin-bottom: 20px;
+}
+
+.main-content h1 {
+    color: #ebe4e4;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 140px;
+    letter-spacing: 3px;
+    line-height: 80%;
+}
+
+.apresentation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 20px;
+}
+
+.apresentation p {
+    color: #ebe4e4;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-top: 110px;
+}
+
+.btn-contact-hero {
+    background-color: #a7530f;
+}
+
+        /* PROJECTS */
+.projetos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.project-title {
+    color: #ebe4e4;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 60px;
+    margin-bottom: 20px;
+    width: 65%;
+    letter-spacing: 5px;
+    line-height: 90%;
+    position: relative;
+}
+
+.text {
+    color: #ebe4e4;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.card-projeto {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid #474646;
+    padding: 32px;
+    background-image: url(assets/img/ponto-luz-bg.png);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #ebe4e4;
+    font-family: 'Inter Tight', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.finish {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category {
+    color: #ebe4e4;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.cardimg {
+    width: 100%;
+}
