@@ -165,6 +165,9 @@ main {
     @media (min-width: 769px) and (max-width: 1024px) {
         width: 50%;
     }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        width: 60%;
+    }
 }
 
 .apresentation p {
@@ -181,6 +184,9 @@ main {
     }
     @media (min-width: 426px) and (max-width: 768px) {
         width: 100%;
+    }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        width: 70%;
     }
 }
 
@@ -224,7 +230,7 @@ main {
         width: 100%;
     }
     @media (min-width: 769px) and (max-width: 1024px) {
-        width: 80%;
+        width: 50%;
     }
 }
 
@@ -287,6 +293,10 @@ main {
         font-size: 20px;
         width: 60%;
     }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        font-size: 20px;
+        width: 60%;
+    }
 }
 
 .cardimg {
@@ -334,6 +344,12 @@ main {
     gap: 20px;
     width: 30%;
     @media (max-width: 425px) {
+        width: 60%;
+    }
+    @media (min-width: 769px) and (max-width: 1024px) {
+        width: 50%;
+    }
+    @media (min-width: 1025px) and (max-width: 1440px) {
         width: 60%;
     }
 }
@@ -446,7 +462,10 @@ main {
         width: 50%;
     }
     @media (min-width: 769px) and (max-width: 1024px) {
-        width: 60%;
+        width: 40%;
+    }
+    @media (min-width: 1025px) and (max-width: 1440px) {
+        width: 30%;
     }
 }
 
